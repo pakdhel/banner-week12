@@ -1,8 +1,22 @@
+'use client'
+
 import Image from "next/image"
-import Photo from "../../public/photo.png"
+import Photo from "../../public/Frame 117.png"
 import Button from "./components/Button"
+import { useState } from "react"
 
 export default function Home() {
+  const [ name, setName ] = useState("Muhamamd Fadhel H");
+  const [ inputValue, setInputValue ] = useState("");
+
+  const handleClick = () => {
+    setName(inputValue)
+  }
+
+  const handleInputChange = (e) => {
+    setInputValue(e.target.value);
+  }
+
   return (
     <main>
       <div className="container-luar">
@@ -13,11 +27,12 @@ export default function Home() {
                 src={Photo}
                 alt="Photo"
                 width={120}
+                style={{borderRadius: "100%"}}
               />
             </div>
             <div className="text">
               <div className="name">
-                <h2>Muhammad Fadhel H</h2>
+                <h2>{ name }</h2>
               </div>
               <div className="subtext">
                 <div>D121211009</div>
@@ -29,10 +44,12 @@ export default function Home() {
             <input
               text="text"
               placeholder="Tuliskan namamu"
+              value={inputValue}
+              onChange={handleInputChange}
             />
           </div>
           <div className="button">
-            <Button />
+            <Button onClick={handleClick}/>
           </div>
         </div>
       </div>

@@ -1,7 +1,7 @@
 @import url('https://fonts.google.com/specimen/Plus+Jakarta+Sans');
 
 body {
-  background-color: #2E2424;
+  background-color: #F4F4F4;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -36,7 +36,7 @@ input {
   box-sizing: border-box;
   padding: 10px;
   border-radius: 12px;
-  border: 1px solid #EFCA08;
+  border: 1px solid #FFCDD2;
 }
 
 button {
@@ -50,6 +50,6 @@ button {
   box-sizing: border-box;
   padding: 10px;
   border-radius: 12px;
-  background: #EFCA08;
+  background: #FFCDD2;
   border: none;
 }

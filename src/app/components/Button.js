@@ -1,8 +1,8 @@
 import React from 'react'
 import styles from '../globals.css'
 
-export default function Button() {
+export default function Button({onClick}) {
   return (
-    <button>Halo!</button>
+    <button onClick={onClick}>Halo!</button>
   )
 }
