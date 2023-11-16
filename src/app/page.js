@@ -46,6 +46,11 @@ export default function Home() {
               placeholder="Tuliskan namamu"
               value={inputValue}
               onChange={handleInputChange}
+              onKeyDown={(e) => {
+                if (e.key === "Enter") {
+                  handleClick();
+                }
+              }}
             />
           </div>
           <div className="button">
