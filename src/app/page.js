@@ -2,8 +2,9 @@
 
 import Image from "next/image"
 import Photo from "../../public/Frame 117.png"
-import Button from "./components/Button"
+import Button from "@components/Button"
 import { useState } from "react"
+import "@styles/home.css"
 
 export default function Home() {
   const [ name, setName ] = useState("Muhamamd Fadhel H");
@@ -18,7 +19,7 @@ export default function Home() {
   }
 
   return (
-    <main>
+    <>
       <div className="container-luar">
         <div className="container-dalam">
           <div className="content">
@@ -58,6 +59,6 @@ export default function Home() {
           </div>
         </div>
       </div>
-    </main>
+    </>
   )
 }

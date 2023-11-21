@@ -1,0 +1,12 @@
+@import url('https://fonts.google.com/specimen/Plus+Jakarta+Sans');
+
+body {
+  background-color: #F4F4F4;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 100vh;
+  margin: 0;
+  gap: 32px;
+}
