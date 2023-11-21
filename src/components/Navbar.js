@@ -9,13 +9,12 @@ const Navbar = () => {
     const pathname = usePathname();
     return (
         <div className='navbar-container'>
-            <Link className={`link ${pathname === '/' ? 'active' : ''}`} href='/'>
-                <p className='home'>Home</p>
+            <Link className={`link ${pathname === '/' ? 'active' : 'default'}`} href='/'>
+                Home
             </Link>
-            <p className='home'>|</p>
-            
-            <Link href='/diary'>
-                <p className='fetch'>Fetch</p>
+            <p>|</p>
+            <Link className={`link ${pathname === '/diary' ? 'active' : 'default'}`} href='/diary'>
+                Fetch
             </Link>
         </div>
     )
