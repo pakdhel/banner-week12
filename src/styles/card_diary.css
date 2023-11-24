@@ -7,9 +7,11 @@
     flex-direction: column;
     gap: 10px;
     align-items: flex-start;
+    margin: 10px;
 }
 
 .content-diary {
+    text-decoration: none;
     display: -webkit-box;
     -webkit-box-orient: vertical;
     -webkit-line-clamp: 3;
@@ -21,4 +23,10 @@
     font-style: normal;
     font-weight: 400;
     line-height: normal;
+}
+
+
+h1 {
+    list-style-type: none;
+    color: #1E1E1E;
 }
